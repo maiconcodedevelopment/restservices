@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: maicon
- * Date: 16/01/18
- * Time: 18:57
- */
+header('Content-type','text/plain');
+
+$host = $_SERVER['HTTP_HOST'];
+$dir = dirname($_SERVER['PHP_SELF']);
+$in = 'index.php';
+
+header("Location: http://$host$dir/$in");
